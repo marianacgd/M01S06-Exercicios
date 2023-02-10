@@ -3,8 +3,6 @@ function sleep(valor) {
     setTimeout(() => {
       res(valor);
     }, 3000);
-  }).then((resultado) => {
-    console.log(resultado);
-  });
+  }).then((resultado) => console.log(resultado));
 }
 sleep(20);

@@ -21,14 +21,10 @@ const aprovacaoValor = aprovarValorSolicitado(cliente, 300.0);
 //metodo usado para aguardar o término de ambas as promises
 Promise.all([aprovacaoCadastro, aprovacaoValor])
   .then((results) => {
-    if (results[0] === true && results[1] === true) {
-      console.log('APROVADO');
-    } else {
-      console.log('REPROVADO');
-    }
+    console.log('APROVADO!');
   })
   .catch((error) => {
-    console.log('REPROVADO');
+    console.log('REPROVADO!');
   })
   .finally(() => {
     console.log('Fim do Processamento'); //impresso independentemente do resultado das promises

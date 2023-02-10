@@ -6,5 +6,5 @@ const retornoEmpresa2 = new Promise((resolve) => setTimeout(resolve, fakeTime(),
 
 // ... continue daqui ....
 Promise.race([retornoEmpresa1, retornoEmpresa2])
-  .then((result) => console.log(`${result}`))
+  .then((result) => console.log(result))
   .catch((err) => console.log(err));

@@ -1,0 +1,12 @@
+.lista{
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemLista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #cecbcb;
+  border-radius: 5px;
+}
