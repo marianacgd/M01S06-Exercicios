@@ -1,5 +1,21 @@
-.lista{
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.lista {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -9,4 +25,12 @@
   gap: 10px;
   border: 1px solid #cecbcb;
   border-radius: 5px;
+  align-items: center;
+}
+
+.rodape {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
 }
